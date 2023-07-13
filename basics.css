@@ -1,0 +1,281 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Source Code Pro;
+    font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh; /* Viewport Height grows with content */
+    background-color: black;
+}
+
+.menubar {
+    position: relative;
+    background: #2CB67D;
+    border-radius: 15px;
+    width: 95%;
+    height: 65px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: auto; /* Centering the Menu Bar */
+    margin-top: 40px;
+}
+
+/* Menu Buttons */
+.menubar a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+    padding: 8px;
+    background-color: black;
+    color: white;
+    transition: background-color 2s, color 2s;
+    font-weight: 600;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+
+    transition: transform 1s;
+    transition: scale(1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  /* Menu Button Animation */
+  .menubar a:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.1);
+  }
+
+  .menu-item {
+    margin: auto;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+  }
+      
+  .logocircle {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 110px;
+    height: 110px;
+    background-color: black;
+    border-radius: 50%;
+  }
+
+  .left-half {
+    margin: auto;
+    max-width: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .right-half {
+    margin: auto;
+    max-width: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .hero {
+    background: url("stars.jpg");
+    background-size: cover;
+    height: auto;
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
+    color: white;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 550px;
+    padding: 0vw 50px 0vw;
+    text-align: center;
+    line-height: 2;
+    background-color: #2CB67D;
+
+    justify-content: center;
+}
+
+.image {
+    grid-area: image;
+    background: url("Card 1 Image.svg");
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .image:hover {
+    transform: scale(1.1);
+  }
+
+  h1 {
+    font-weight: 700; 
+    font-size: 30px;
+    display: inline-block;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  p {
+    font-weight: 500; 
+    font-size: 16px;
+    font-family: 'Poppins';
+  }
+
+  .paragraph {
+    width: 300px;
+    line-height: 1.5;
+    text-align: justify;
+    position: relative;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 0px 80px 0px;
+  }
+  
+  .box {
+    height: auto;
+    width: auto;
+    text-align: left;
+  }
+  
+  .left {
+    margin-right: 1%;
+  }
+  
+  .right {
+    margin-left: 1%;
+  }
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 52px;
+}
+
+.wave .shape-fill {
+    fill: #040409;
+}
+
+.three {
+    background-color: #16161A;
+    height: auto;
+}
+
+.Choose_A_Problem {
+    margin: 70px;
+    color: #2CB67D;
+    font-size: 30px;
+    display: inline-block;
+}
+
+.problems_container {
+    display: inline-block;
+    margin: 30px;
+    height: auto;
+    padding-top: 170px;
+}
+
+.problem {
+    background-color: #292929;
+    width: auto;
+    height: auto;
+    padding: 15px 0px;
+    color: gray;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    text-align: justify;
+
+    transition: transform 0.3s ease-in-out;
+}
+
+.problem:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #383838;
+    border: 2px solid white;
+
+    transform: scale(1.03);
+}
+
+.problem p {
+    font-family: 'Poppins Regular';
+    font-size: 12px;
+    letter-spacing: 0.5;
+    padding: 0px 30px;
+}
+
+.problem h3 {
+    font-family: 'Source Code Pro';
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 15px 0px;
+}
+
+.problem:hover hr {
+    border: none;
+    border-bottom: 1px solid white;
+}
+  
